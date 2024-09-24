@@ -1,0 +1,15 @@
+Jenkins Installation and Setup on AWS EC2 Redhat Instance
+Prerequisites
+An active AWS account
+A Redhat EC2 instance (t2.medium) with 4GB RAM
+A security group with required ports open (e.g., port 8080 for Jenkins)
+Attached security group to the EC2 instance
+Java OpenJDK 17 installed
+
+We can get jenkins installation Script from the website dpending on our OS
+
+linux distributions = https://www.jenkins.io/doc/book/installing/linux/
+
+MacOs = https://www.jenkins.io/doc/book/installing/macos/
+
+Windows = https://www.jenkins.io/doc/book/installing/windows/

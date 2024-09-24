@@ -1,0 +1,18 @@
+ #script to install ansible on an ubuntu server
+2. sudo apt update
+3. sudo adduser ansible
+4. echo "ansible ALL=(ALL) NOPASSWD:ALL" | sudo tee /etc/sudoers.d/ansible 5. sudo su - ansible
+6. sudo apt-add-repository ppa:ansible/ansible
+7. sudo apt install ansible –y
+
+# script to install ansible on a redhat server
+2.sudo useradd ansible
+3.sudo hostname ansible
+4.echo "ansible ALL=(ALL) NOPASSWD:ALL" | sudo tee /etc/sudoers.d/ansible 5.sudo su - ansible
+6.# Enable PassowrdLogin and assign password to ansible user 7.sudo yum install python3 -y
+8.sudo alternatives --set python /usr/bin/python3
+9.# Install pip package manager for for python
+10.sudo yum -y install python3-pip -y 11.pip3 install ansible –user
+
+# command to check ansible version
+2. ansible --version
